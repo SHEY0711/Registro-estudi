@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Programa Académico</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="max-w-4xl mx-auto bg-white p-8 mt-10 rounded shadow-lg">
+    <div class="flex items-center justify-between mb-6">
+     
+      <img src="colombologo.jpeg" alt="Logo" class="h-12">
+      <h1 class="text-2xl font-bold text-gray-800">Registro de programa académico</h1>
+    </div>
+    <form action="#" method="POST">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div>
+          <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre del Programa *</label>
+          <input type="text" id="nombre" name="nombre" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <label for="nombre-abreviado" class="block text-sm font-medium text-gray-700">Nombre Abreviado</label>
+          <input type="text" id="nombre-abreviado" name="nombre-abreviado" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <label for="codigo" class="block text-sm font-medium text-gray-700">Código Institucional *</label>
+          <input type="text" id="codigo" name="codigo" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <label for="nivel" class="block text-sm font-medium text-gray-700">Nivel de Formación *</label>
+          <select id="nivel" name="nivel" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            <option value="">Seleccione</option>
+            <option value="pregrado">Pregrado</option>
+            <option value="posgrado">Posgrado</option>
+          </select>
+        </div>
+        <div>
+          <label for="programa-academico" class="block text-sm font-medium text-gray-700">Programa Académico *</label>
+          <input type="text" id="programa-academico" name="programa-academico" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <label for="snies" class="block text-sm font-medium text-gray-700">SNIES</label>
+          <input type="text" id="snies" name="snies" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <label for="coordinador" class="block text-sm font-medium text-gray-700">Coordinador Académico *</label>
+          <select id="coordinador" name="coordinador" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            <option value="">Seleccione</option>
+            <option value="coordinador1">Coordinador 1</option>
+            <option value="coordinador2">Coordinador 2</option>
+          </select>
+        </div>
+        <div>
+          <label for="estado" class="block text-sm font-medium text-gray-700">Estado *</label>
+          <select id="estado" name="estado" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            <option value="">Seleccione</option>
+            <option value="activo">Activo</option>
+            <option value="inactivo">Inactivo</option>
+          </select>
+        </div>
+      </div>
+      <div class="flex items-center mb-4">
+        <input type="checkbox" id="practicas" name="practicas" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+        <label for="practicas" class="ml-2 text-sm font-medium text-gray-700">Realizar prácticas</label>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+        <div>
+          <label for="duracion" class="block text-sm font-medium text-gray-700">Duración</label>
+          <div class="flex items-center">
+            <input type="number" id="duracion" name="duracion" class="mt-1 block w-20 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            <span class="ml-2 text-sm text-gray-700">Meses</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Agregar</button>
+      </div>
+    </form>
+    <footer>&copy; 2024 sheyla Del campo. Todos los derechos reservados.</footer>
+  </div>
+ 
+</body>
+</html>
